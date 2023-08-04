@@ -4,11 +4,19 @@
     border-radius:1rem ;
     padding: 1rem;
     margin: 1rem auto;
+    width: 45rem;
 }
 
 .meal-list__item{
+    display: flex;
     padding: 0.5rem;
+    justify-content: space-between;
 
+}
+
+.meal-list__item .details{
+    display: flex;
+    flex-direction:column;
 }
 
 .meal-list__item .name{
@@ -24,7 +32,7 @@
     color:darkred;
 }
 
-.meal-list__item .line{
+.line{
     margin-top:1rem;
     border-bottom: 1px solid black;
     width: 100%;

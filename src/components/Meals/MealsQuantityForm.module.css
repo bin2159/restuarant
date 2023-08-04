@@ -1,0 +1,15 @@
+form input{
+    width: 2rem;
+    border-radius: 0.3rem;
+    margin: 0.4rem;
+    border:0.1px solid rgba(154, 151, 151, 0.81);
+}
+
+form button {
+    width: 6rem;
+    border-radius: 1rem;
+    border:none ;
+    background: rgb(63,18,0);
+    color: azure;
+    padding: 0.3rem 0.6rem;
+}
