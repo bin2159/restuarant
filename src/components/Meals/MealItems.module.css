@@ -1,0 +1,31 @@
+.meal-list{
+    list-style: none;
+    background: azure;
+    border-radius:1rem ;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.meal-list__item{
+    padding: 0.5rem;
+
+}
+
+.meal-list__item .name{
+    font-weight: bold;
+}
+
+.meal-list__item .desc{
+    font-style: italic;
+}
+
+.meal-list__item .price{
+    font-weight: bold;
+    color:darkred;
+}
+
+.meal-list__item .line{
+    margin-top:1rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
