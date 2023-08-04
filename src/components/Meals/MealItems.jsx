@@ -31,8 +31,8 @@ const MealItems = () => {
   return (
     <ul className={Styles["meal-list"]}>
       {DUMMY_MEALS.map(({ id, name, description, price }) => (
-        <>
-        <li key={id} className={Styles["meal-list__item"]}>
+        <div key={id}>
+        <li  className={Styles["meal-list__item"]}>
           <div className={Styles.details}>
           <div className={Styles.name}>{name}</div>
             <div className={Styles.desc}>{description}</div>
@@ -41,7 +41,7 @@ const MealItems = () => {
           <MealsQuantityForm />
         </li>
          <div className={Styles.line}></div>
-         </>
+         </div>
       ))}
     </ul>
   );

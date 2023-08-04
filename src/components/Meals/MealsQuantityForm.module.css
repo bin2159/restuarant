@@ -6,10 +6,17 @@ form input{
 }
 
 form button {
+    cursor: pointer;
     width: 6rem;
     border-radius: 1rem;
     border:none ;
-    background: rgb(63,18,0);
+    background: rgb(76, 22, 0);
     color: azure;
-    padding: 0.3rem 0.6rem;
+    padding: 0.5rem 0.6rem;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #641e03;
+  border-color: #641e03;
 }
