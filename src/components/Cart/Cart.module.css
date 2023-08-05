@@ -4,6 +4,11 @@
     margin: 0.5rem 0;
 }
 
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+}
+
 .total{
     font-weight: bold;
     display: flex;

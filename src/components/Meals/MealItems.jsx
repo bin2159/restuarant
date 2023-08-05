@@ -38,7 +38,7 @@ const MealItems = () => {
             <div className={Styles.desc}>{description}</div>
             <div className={Styles.price}>${price}</div>
           </div>
-          <MealsQuantityForm />
+          <MealsQuantityForm id={id} item={name} price={price}/>
         </li>
          <div className={Styles.line}></div>
          </div>
