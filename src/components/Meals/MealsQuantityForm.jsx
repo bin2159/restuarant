@@ -10,7 +10,7 @@ const MealsQuantityForm = ({item,amount,id,price}) => {
   }
   const cartUpdateHandler=(event)=>{
     event.preventDefault()
-    cartCtx.cartContext.addItem({item,amount,id,price,quantity}) 
+    cartCtx.cartContext.addItem({item,id,price,quantity}) 
   }
 
   // useEffect(()=>{

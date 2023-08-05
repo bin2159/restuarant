@@ -12,11 +12,12 @@ const CartContextProvider=({children})=>{
 
     const addItemHandler=(newItem)=>{
         setItem(prev=>{
+            console.log(newItem)
             const duplicateItemIndex=prev.findIndex(prevItem=>prevItem.id===newItem.id)
             if(duplicateItemIndex!==-1){
                 const updatedItem = {
                     ...prev[duplicateItemIndex],
-                    quantity: prev[duplicateItemIndex].quantity + newItem.quantity
+                    quantity: prev[duplicateItemIndex].quantity + (newItem.quantity||1)
                   };
                   const newArr = [...prev];
                   newArr[duplicateItemIndex] = updatedItem;
@@ -27,8 +28,21 @@ const CartContextProvider=({children})=>{
             }
         } )
     }
-    const removeItemHandler=()=>{
-
+    const removeItemHandler=(id)=>{
+        setItem(prev=>{
+            const removeItemIndex=prev.findIndex(item=>item.id===id)
+            const updatedItem={...prev[removeItemIndex],quantity:(prev[removeItemIndex].quantity-1<0?0:prev[removeItemIndex].quantity-1)}
+            if(updatedItem.quantity===0){
+                const newArr=prev.filter(item=>item.id!==id)
+                return newArr
+            }
+            else{
+                const newArr=[...prev]
+                newArr[removeItemIndex]=updatedItem
+                return newArr
+            }
+           
+        })
     }
     const cartContext={
         items:item,

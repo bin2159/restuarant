@@ -7,6 +7,44 @@
 .cart-item{
     display: flex;
     justify-content: space-between;
+    font-size: smaller;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgb(118,31,9);
+}
+.item-name{
+    font-size: larger;
+}
+.item-price{
+    color: rgb(118,31,9);
+}
+
+.item-quantity{
+    margin-left: 1rem;
+    
+}
+
+.button-edit{
+    border:1px solid rgb(118,31,9);
+    border-radius: 0.5rem;
+    width: 2.5rem;
+    padding: 0.1rem 0;
+    margin: 0  0.3rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+.button-edit:hover,
+.button-edit:active{
+    background-color: rgb(77, 19, 9);
+    opacity: 70%;
+    color: white;
+}
+
+.line{
+    border-bottom: 1px solid black;
+    margin-top: 0.5rem;
+    width: 20rem;
 }
 
 .total{
